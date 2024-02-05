@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1 class="title">CRM FISSION規格表</h1>
+    <comparison />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Comparison from './components/Comparison'
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-};
+  name: 'App',
+  components: { Comparison },
+}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: url('../src/assets/bg-image.png') no-repeat center center;
+  background-size: cover;
+  .title {
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(#fff, 0.5);
+  }
 }
 </style>
