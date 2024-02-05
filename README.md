@@ -1,24 +1,15 @@
-# crm_instructions
+# CRM - 規格對照表
 
-## Project setup
-```
-npm install
-```
+## Recommended IDE Setup
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+[Vetur]
+[prettier]
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Coding Style
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- ESLint
+- Vue2
+- _Vue SFC (Arrange from top to bottom)_
+  - template `<template>`
+  - scipt
+  - style `<style lang="sass" scoped>`
